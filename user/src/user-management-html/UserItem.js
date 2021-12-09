@@ -1,10 +1,6 @@
 import React, { Component } from "react";
 
 class UserItem extends Component {
-  handleDetail = () => {
-    // this.props.detailUser(this.props.user);
-  }
-
   render() {
     const {user} = this.props;
     return (
@@ -19,11 +15,10 @@ class UserItem extends Component {
             className="btn btn-info mr-2"
             data-toggle="modal"
             data-target="#modelIdUser"
-            onclick={this.handleDetail}
           >
             Edit
           </button>
-          <button className="btn btn-danger" onclick={this.props.handleDeleteUser}>Delete</button>
+          <button className="btn btn-danger" onclick={()=>{this.props.handleDeleteUser(user)}}>Delete</button>
         </td>
       </tr>
     );
