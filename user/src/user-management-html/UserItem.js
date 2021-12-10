@@ -18,7 +18,7 @@ class UserItem extends Component {
           >
             Edit
           </button>
-          <button className="btn btn-danger" onclick={()=>{this.props.handleDeleteUser(user)}}>Delete</button>
+          <button className="btn btn-danger" onClick={()=>{this.props.handleDeleteUser(user)}}>Delete</button>
         </td>
       </tr>
     );

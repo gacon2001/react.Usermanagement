@@ -14,7 +14,7 @@ class Home extends Component {
   }
 
   _findIndex = (id) => {
-    return this.state.listArr.findIndex((item) => {
+    return this.state.listUser.findIndex((item) => {
       return item.id === id;
     });
   };
