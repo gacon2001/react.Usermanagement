@@ -5,7 +5,7 @@ import Modal from "./Modal";
 
 import data from "./data.json";
 
-class Home extends Component {
+class Usermanagement extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -54,4 +54,4 @@ class Home extends Component {
   }
 }
 
-export default Home;
+export default Usermanagement;
